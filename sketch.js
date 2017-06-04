@@ -152,6 +152,11 @@ function drawPiece(Piece) {
 			// spalva pakeisti
 			fill(158, 252, 180);
 			rect(Piece.x,Piece.y,pieceSize,pieceSize);
+			
+			if((mouseX>Piece.x && mouseX<Piece.x+pieceSize)&&(mouseY>Piece.y && mouseY<Piece.y+pieceSize)){
+				fill(177, 49, 252);
+				rect(Piece.x,Piece.y,pieceSize,pieceSize);
+			}
 		}
 	}
 };
