@@ -63,7 +63,7 @@ function draw() {
 };
 
 function drawScene3(){
-	background(255);
+	background(255,140,140);
 	textSize(40);
 	fill(51,155,255);
 	text("		Pokemon\nmemory game", 200, 100);
@@ -79,7 +79,7 @@ function drawScene3(){
 
 function drawScene1(){
 
-	background(220);
+	background(255,140,140);
 	for(var i=0; i<pieces.length; i++){
 		drawPiece(pieces[i]);
 	}
@@ -87,7 +87,7 @@ function drawScene1(){
 
 function drawScene2(){
 
-	background(255);
+	background(255,140,140);
 	textSize(60);
 	text("Game over",200,200);
 };
@@ -150,7 +150,7 @@ function drawPiece(Piece) {
 		}
 		else {
 			// spalva pakeisti
-			fill(0);
+			fill(158, 252, 180);
 			rect(Piece.x,Piece.y,pieceSize,pieceSize);
 		}
 	}
